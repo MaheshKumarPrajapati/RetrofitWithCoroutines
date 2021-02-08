@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TaskAndroid</string>
+    <string name="tab_text_1">Video</string>
+    <string name="tab_text_2">History</string>
+    <string name="song_name">Song Name:</string>
+    <string name="artist">Artist:</string>
+    <string name="collection">Collection:</string>
+    <string name="duration">Duration</string>
+    <string name="collection_price">Collection Price</string>
+    <string name="track_price">Track Price</string>
+    <string name="relesed_on">Released on: </string>
+</resources>

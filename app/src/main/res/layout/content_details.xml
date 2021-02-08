@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mahesh_prajapati.itunes.ui.main.view.DetailsActivity"
+    tools:showIn="@layout/activity_details">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivSongPreview"
+            android:layout_width="95dp"
+            android:layout_height="80dp"
+            android:padding="4dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="contentDescription" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSongName"
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivSongPreview"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCollectionName"
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tvSongName"
+            app:layout_constraintTop_toBottomOf="@+id/tvSongName" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSongArtist"
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tvCollectionName"
+            app:layout_constraintTop_toBottomOf="@+id/tvCollectionName" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="#c0c0c0"
+            app:layout_constraintTop_toBottomOf="@+id/tvSongArtist"/>
+
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              app:layout_constraintTop_toBottomOf="@+id/view1"
+              >
+
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:weightSum="3">
+
+
+                  <androidx.appcompat.widget.AppCompatTextView
+                      android:id="@+id/tvSongDuration"
+                      style="@style/TextAppearance.AppCompat.Small"
+                      android:layout_width="0dp"
+                      android:gravity="center"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:layout_margin="5dp"
+                  />
+
+                  <View
+                      android:layout_width="1dp"
+                      android:layout_height="match_parent"
+                      android:background="#c0c0c0"
+                      app:layout_constraintTop_toBottomOf="@+id/ivSongPreview"/>
+
+
+                  <androidx.appcompat.widget.AppCompatTextView
+                      android:id="@+id/tvCollectionPrice"
+                      style="@style/TextAppearance.AppCompat.Small"
+                      android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:gravity="center"
+                      android:layout_height="wrap_content"
+                      android:layout_margin="5dp"
+                     />
+
+                  <View
+                      android:layout_width="1dp"
+                      android:layout_height="match_parent"
+                      android:background="#c0c0c0"
+                      app:layout_constraintTop_toBottomOf="@+id/ivSongPreview"/>
+
+
+                  <androidx.appcompat.widget.AppCompatTextView
+                      android:id="@+id/tvSongTrackPrice"
+                      style="@style/TextAppearance.AppCompat.Small"
+                      android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:gravity="center"
+                      android:layout_height="wrap_content"
+                      android:layout_margin="5dp"
+                       />
+
+
+              </LinearLayout>
+
+              <View
+                  android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:background="#c0c0c0"
+                  app:layout_constraintTop_toBottomOf="@+id/ivSongPreview"/>
+
+              <androidx.appcompat.widget.AppCompatTextView
+                  android:id="@+id/tvSongReleaseDate"
+                  style="@style/TextAppearance.AppCompat.Small"
+                  android:layout_width="match_parent"
+                  android:gravity="center"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="15dp"
+                  />
+
+          </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>
